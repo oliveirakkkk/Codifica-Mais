@@ -9,20 +9,21 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/listagem.css">
-    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="/css/listagem.css">
+    <title>Editar Produtos</title>
 </head>
 
 <body>
     
+<form method="put" action="/produtos/salvar?id=<?php echo $produto['id'] ?>">
 
     <div class="conteudoPrincipal">
 
-        <div class="titulo"> Novo Item </div>
+        <div class="titulo"> Editar Item </div>
 
         <div class="cabecalho">
 
-            <a href="/listagem.php"><button class="novoItem"> Voltar </button></a>
+            <a href="/produtos"><button class="novoItem"> Voltar </button></a>
 
             <div class="buscarItem"> Buscar Item </div>
 
@@ -33,7 +34,7 @@ session_start();
             <div class="quadradoFormulario__Superior"> 
                
                 <label for="nome"> Nome </label> <br>
-                <input type="text" name="nome"> <br>
+                <input type="text" name="nome" value="<?php echo $produto['nome'] ?>"> <br>
         
             </div>
 
@@ -94,7 +95,7 @@ session_start();
                     </select><br>
                 </div>
 
-                <button class="cadastrar" type="submit" name="salvar">Cadastrar</button>
+                <input type="submit" class="cadastrar" type="submit" name="salvar" value="Atualizar">
 
             </div>
 
@@ -102,6 +103,7 @@ session_start();
 
     </div>
 
+ </form>
 
 </body>
 

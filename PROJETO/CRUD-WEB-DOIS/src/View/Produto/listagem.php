@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/listagem.css">
+    <link rel="stylesheet" href="/css/listagem.css">
     <title>Listagem de produtos</title>
 </head>
 
@@ -19,7 +19,7 @@ session_start();
 
         <div class="cabecalho">
 
-            <a href="/formulario.php"><button class="novoItem"> Novo Item </button></a>
+            <a href="/produtos/criar"><button class="novoItem"> Novo Item </button></a>
 
             <div class="buscarItem"> Buscar Item </div>
 
@@ -47,7 +47,7 @@ session_start();
 
             <div class="linhaInferior">
 
-            <a href="/editar.php"><button class="editar"> Editar </button></a>
+            <a href="/produtos/editar?id="><button class="editar"> Editar </button></a>
 
                 <button class="deletar"> Deletar </button>
 

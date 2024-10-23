@@ -9,11 +9,13 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/listagem.css">
+    <link rel="stylesheet" href="/css/listagem.css">
     <title>Cadastro de produtos</title>
 </head>
 
 <body>
+
+<form method="post" action="/produtos/salvar">
     
 
     <div class="conteudoPrincipal">
@@ -94,7 +96,7 @@ session_start();
                     </select><br>
                 </div>
 
-                <button class="cadastrar" type="submit" name="salvar">Cadastrar</button>
+                <input type="submit" class="cadastrar" type="submit" name="salvar" value="Cadastrar">
 
             </div>
 
@@ -102,6 +104,7 @@ session_start();
 
     </div>
 
+</form>
 
 </body>
 

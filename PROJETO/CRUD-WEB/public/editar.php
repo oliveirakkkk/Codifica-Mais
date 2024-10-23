@@ -10,7 +10,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/listagem.css">
-    <title>Cadastro de produtos</title>
+    <title>Editar Produtos</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@ session_start();
 
     <div class="conteudoPrincipal">
 
-        <div class="titulo"> Novo Item </div>
+        <div class="titulo"> Editar Item </div>
 
         <div class="cabecalho">
 
@@ -94,7 +94,7 @@ session_start();
                     </select><br>
                 </div>
 
-                <button class="cadastrar" type="submit" name="salvar">Cadastrar</button>
+                <button class="cadastrar" type="submit" name="salvar">Atualizar</button>
 
             </div>
 
